@@ -3,7 +3,7 @@ const CACHE_NAME = 'brixo-techfx-v1';
 const urlsToCache = [
   './',
   './index.html',
-  './bfx-logo.jpeg'
+  './bfx-logo.png'
 ];
 
 self.addEventListener('install', event => {
