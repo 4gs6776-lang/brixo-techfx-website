@@ -297,7 +297,7 @@ tailwind.config = {
 <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
   <nav class="max-w-[1400px] mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
     <a href="#home" class="flex items-center gap-3 group" data-cursor="link">
-            <img src="bfx-logo.png" alt="Brixo-TechFX Logo" class="w-12 h-12 object-contain">
+            <img src="bfx-logo.jpeg" alt="Brixo-TechFX Logo" class="w-12 h-12 object-contain">
       <div class="leading-tight">
         <div class="display-font font-bold text-[15px] tracking-tight">BRIXO<span class="text-spark-cyan">-</span>TECHFx</div>
         <div class="text-[9px] tracking-[0.25em] text-white/40 font-medium">DIGITAL SOLUTIONS</div>
@@ -643,58 +643,36 @@ tailwind.config = {
     </div>
 
     <div class="space-y-8 reveal-stagger">
-      <!-- Solution 01: Websites (Image Left, Text Right) -->
+      <!-- Solution 01: Branding (Image Left, Text Right) -->
       <div class="grid lg:grid-cols-2 gap-8 items-center group">
         <div class="relative h-80 rounded-2xl overflow-hidden bento-card" data-cursor="link">
-          <div class="absolute inset-0 bg-gradient-to-br from-spark-blue/20 to-transparent"></div>
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-3/4 glass rounded-xl p-4 transition-transform group-hover:scale-105 duration-500">
-            <div class="flex gap-1.5 mb-4">
-              <div class="w-2 h-2 rounded-full bg-red-400/60"></div>
-              <div class="w-2 h-2 rounded-full bg-yellow-400/60"></div>
-              <div class="w-2 h-2 rounded-full bg-green-400/60"></div>
-            </div>
-            <div class="h-full grid grid-cols-3 gap-2">
-              <div class="col-span-2 bg-white/5 rounded-lg"></div>
-              <div class="bg-white/5 rounded-lg"></div>
-            </div>
-          </div>
+          <img src="solution-branding.png" alt="Branding Solutions Mockup" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
         </div>
         <div>
           <span class="display-font text-6xl font-bold text-white/10 block mb-2">01</span>
-          <h3 class="display-font text-3xl font-bold mb-4">WEBSITES</h3>
+          <h3 class="display-font text-3xl font-bold mb-4">BRAND EXPERIENCES</h3>
           <p class="text-white/55 text-sm leading-relaxed mb-6 max-w-md">
-            High-performance websites engineered for speed, conversion and search visibility. We build digital storefronts that work as hard as you do.
+            High-quality branding solutions that build recognition, trust, and loyalty. We craft visual identities that tell your story and resonate with your audience.
           </p>
           <a href="#contact" class="text-sm font-semibold text-white border-b border-spark-cyan pb-1 inline-flex items-center gap-2 hover:gap-4 transition-all" data-cursor="link">
-            EXPLORE WEB SOLUTIONS <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            EXPLORE BRANDING SOLUTIONS <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
         </div>
       </div>
 
-      <!-- Solution 02: Business Software (Text Left, Image Right) -->
+      <!-- Solution 02: Hospital Systems (Text Left, Image Right) -->
       <div class="grid lg:grid-cols-2 gap-8 items-center group">
         <div class="lg:order-2 relative h-80 rounded-2xl overflow-hidden bento-card" data-cursor="link">
-          <div class="absolute inset-0 bg-gradient-to-bl from-spark-cyan/20 to-transparent"></div>
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-3/4 glass rounded-xl p-4 transition-transform group-hover:scale-105 duration-500">
-            <div class="text-[10px] text-white/40 mb-2">Revenue Q4</div>
-            <div class="flex items-end gap-1.5 h-32">
-              <div class="flex-1 bg-spark-blue/40 rounded-t" style="height:40%"></div>
-              <div class="flex-1 bg-spark-blue/60 rounded-t" style="height:65%"></div>
-              <div class="flex-1 bg-spark-cyan/60 rounded-t" style="height:50%"></div>
-              <div class="flex-1 bg-spark-cyan/80 rounded-t" style="height:85%"></div>
-              <div class="flex-1 bg-spark-cyan rounded-t" style="height:70%"></div>
-              <div class="flex-1 bg-spark-cyan rounded-t" style="height:95%"></div>
-            </div>
-          </div>
+          <img src="solution-hospital.png" alt="Hospital Management System UI" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
         </div>
         <div class="lg:order-1">
           <span class="display-font text-6xl font-bold text-white/10 block mb-2">02</span>
-          <h3 class="display-font text-3xl font-bold mb-4">BUSINESS SOFTWARE</h3>
+          <h3 class="display-font text-3xl font-bold mb-4">HOSPITAL SYSTEMS</h3>
           <p class="text-white/55 text-sm leading-relaxed mb-6 max-w-md">
-            Custom ERP, CRM and operational software tailored to your workflow. Automate the mundane, optimize the complex.
+            End-to-end digital hospital solutions. Manage patients, appointments, billing, pharmacy, and inventory seamlessly with a system designed for high-stress environments.
           </p>
           <a href="#contact" class="text-sm font-semibold text-white border-b border-spark-cyan pb-1 inline-flex items-center gap-2 hover:gap-4 transition-all" data-cursor="link">
-            EXPLORE SOFTWARE SOLUTIONS <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            EXPLORE HEALTH TECH <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
         </div>
       </div>
@@ -722,42 +700,44 @@ tailwind.config = {
         <button class="filter-btn px-4 py-2 rounded-full text-xs font-medium border border-white/10 hover:border-spark-cyan/50 transition-colors" data-filter="websites" data-cursor="link">WEBSITES</button>
         <button class="filter-btn px-4 py-2 rounded-full text-xs font-medium border border-white/10 hover:border-spark-cyan/50 transition-colors" data-filter="software" data-cursor="link">SOFTWARE</button>
         <button class="filter-btn px-4 py-2 rounded-full text-xs font-medium border border-white/10 hover:border-spark-cyan/50 transition-colors" data-filter="branding" data-cursor="link">BRANDING</button>
+        <button class="filter-btn px-4 py-2 rounded-full text-xs font-medium border border-white/10 hover:border-spark-cyan/50 transition-colors" data-filter="design" data-cursor="link">DESIGN</button>
+        <button class="filter-btn px-4 py-2 rounded-full text-xs font-medium border border-white/10 hover:border-spark-cyan/50 transition-colors" data-filter="photo" data-cursor="link">PHOTO</button>
       </div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-12 gap-4 reveal-stagger" id="portfolioGrid">
-            <!-- Large Feature -->
-      <div class="portfolio-item md:col-span-8 aspect-[16/10] relative overflow-hidden rounded-xl group" data-category="branding" data-cursor="link">
-        <img src="portfolio-image.png" alt="Brixo-TechFX Portfolio Overview" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+      <!-- Large Feature: Photography Studio -->
+      <div class="portfolio-item md:col-span-8 aspect-[16/10] relative overflow-hidden rounded-xl group" data-category="design" data-cursor="link">
+        <img src="portfolio-photo-studio.png" alt="Photography Studio Platform" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
         <div class="absolute inset-0 bg-gradient-to-t from-ink-950/90 to-transparent"></div>
         <div class="absolute bottom-0 left-0 p-8">
-          <span class="text-[11px] tracking-[0.2em] text-spark-cyan font-semibold">2026 · BRANDING & DESIGN</span>
-          <h3 class="display-font text-3xl font-bold mt-2">Brixo-TechFX Service Portfolio</h3>
-          <p class="text-sm text-white/60 mt-2 max-w-md">Creative Design. Smart Technology. Real Solutions.</p>
+          <span class="text-[11px] tracking-[0.2em] text-spark-cyan font-semibold">2026 · WEB DESIGN</span>
+          <h3 class="display-font text-3xl font-bold mt-2">Vision Meets Perfection</h3>
+          <p class="text-sm text-white/60 mt-2 max-w-md">A premium digital presence for a professional photography studio.</p>
         </div>
       </div>
       
-      <!-- Small Item -->
-      <div class="portfolio-item md:col-span-4 aspect-[16/10] relative overflow-hidden rounded-xl group" data-category="branding" data-cursor="link">
-        <img src="https://picsum.photos/seed/brixo-portfolio-2/600/750.jpg" alt="Verde Identity" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+      <!-- Small Item: Photo Editing -->
+      <div class="portfolio-item md:col-span-4 aspect-[16/10] relative overflow-hidden rounded-xl group" data-category="photo" data-cursor="link">
+        <img src="solution-photo-editing.png" alt="Brixo-TechFX Photo Editor" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
         <div class="absolute inset-0 bg-gradient-to-t from-ink-950/90 to-transparent"></div>
         <div class="absolute bottom-0 left-0 p-6">
-          <span class="text-[11px] tracking-[0.2em] text-spark-cyan font-semibold">2025 · BRANDING</span>
-          <h3 class="display-font text-xl font-bold mt-2">Verde Identity</h3>
+          <span class="text-[11px] tracking-[0.2em] text-spark-cyan font-semibold">2026 · PHOTO EDITING</span>
+          <h3 class="display-font text-xl font-bold mt-2">Stunning Results</h3>
         </div>
       </div>
 
-      <!-- Small Item -->
-      <div class="portfolio-item md:col-span-4 aspect-square relative overflow-hidden rounded-xl group" data-category="software" data-cursor="link">
-        <img src="https://picsum.photos/seed/brixo-portfolio-3/600/600.jpg" alt="MediCore HMS" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+      <!-- Small Item: Service Portfolio -->
+      <div class="portfolio-item md:col-span-4 aspect-square relative overflow-hidden rounded-xl group" data-category="branding" data-cursor="link">
+        <img src="portfolio-image.png" alt="Brixo-TechFX Portfolio Overview" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
         <div class="absolute inset-0 bg-gradient-to-t from-ink-950/90 to-transparent"></div>
         <div class="absolute bottom-0 left-0 p-6">
-          <span class="text-[11px] tracking-[0.2em] text-spark-cyan font-semibold">2026 · SOFTWARE</span>
-          <h3 class="display-font text-xl font-bold mt-2">MediCore HMS</h3>
+          <span class="text-[11px] tracking-[0.2em] text-spark-cyan font-semibold">2026 · BRANDING & DESIGN</span>
+          <h3 class="display-font text-xl font-bold mt-2">Brixo-TechFX Service Portfolio</h3>
         </div>
       </div>
 
-      <!-- Large Feature -->
+      <!-- Large Feature: Architecture -->
       <div class="portfolio-item md:col-span-8 aspect-square relative overflow-hidden rounded-xl group" data-category="websites" data-cursor="link">
         <img src="https://picsum.photos/seed/brixo-portfolio-4/1200/600.jpg" alt="Lumen Campaign" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
         <div class="absolute inset-0 bg-gradient-to-t from-ink-950/90 to-transparent"></div>
@@ -1113,7 +1093,7 @@ tailwind.config = {
     <div class="grid lg:grid-cols-12 gap-12 mb-16">
       <div class="lg:col-span-5">
         <a href="#home" class="flex items-center gap-3 mb-6">
-                   <img src="bfx-logo.png" alt="Brixo-TechFX Logo" class="w-12 h-12 object-contain">
+                   <img src="bfx-logo.jpeg" alt="Brixo-TechFX Logo" class="w-12 h-12 object-contain">
           <div class="leading-tight">
             <div class="display-font font-bold text-[15px] tracking-tight">BRIXO-TECHFx</div>
             <div class="text-[9px] tracking-[0.25em] text-white/40 font-medium">DIGITAL SOLUTIONS</div>
