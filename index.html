@@ -6,7 +6,7 @@
 <title>Brixo-TechFx | Creative Design & Digital Technology Solutions</title>
       <!-- PWA Manifest & Theme -->
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#03060D">
+    <meta name="theme-color" content="#020409">
     <link rel="apple-touch-icon" href="bfx-logo.jpeg">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -17,7 +17,6 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<!-- Mixing Sora (Geometric) with Instrument Serif (Editorial) for a premium agency feel -->
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -31,7 +30,7 @@ tailwind.config = {
         serif: ['Instrument Serif', 'serif'],
       },
       colors: {
-        ink: { 950: '#03060D', 900: '#050B16', 800: '#0A1630', 700: '#0F1F3D' },
+        ink: { 950: '#020409', 900: '#050B16', 800: '#0A1630', 700: '#0F1F3D' },
         spark: { blue: '#0066FF', cyan: '#00E5FF' }
       }
     }
@@ -43,16 +42,16 @@ tailwind.config = {
 
 <style>
   :root {
-    --bg-primary: #03060D;
+    --bg-primary: #020409;
     --bg-secondary: #050B16;
     --bg-tertiary: #0A1630;
     --text-primary: #F8FAFC;
-    --text-muted: rgba(248, 250, 252, 0.65);
-    --text-dim: rgba(248, 250, 252, 0.38);
+    --text-muted: #94A3B8;
+    --text-dim: #64748B;
     --accent-blue: #0066FF;
     --accent-cyan: #00E5FF;
-    --border-color: rgba(255, 255, 255, 0.08);
-    --glass-bg: rgba(10, 22, 48, 0.4);
+    --border-color: rgba(255, 255, 255, 0.06);
+    --glass-bg: rgba(10, 22, 48, 0.35);
   }
 
   [data-theme="light"] {
@@ -60,12 +59,12 @@ tailwind.config = {
     --bg-secondary: #F0F4F8;
     --bg-tertiary: #E1E8F0;
     --text-primary: #050B16;
-    --text-muted: rgba(5, 11, 22, 0.7);
-    --text-dim: rgba(5, 11, 22, 0.4);
+    --text-muted: #475569;
+    --text-dim: #94A3B8;
     --accent-blue: #0052E0;
     --accent-cyan: #0090B8;
-    --border-color: rgba(5, 11, 22, 0.1);
-    --glass-bg: rgba(255, 255, 255, 0.6);
+    --border-color: rgba(5, 11, 22, 0.08);
+    --glass-bg: rgba(255, 255, 255, 0.65);
   }
 
   * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -80,12 +79,10 @@ tailwind.config = {
 
   ::selection { background: var(--accent-cyan); color: #000; }
 
-  /* Premium Scrollbar */
-  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar { width: 6px; }
   ::-webkit-scrollbar-track { background: var(--bg-primary); }
   ::-webkit-scrollbar-thumb { background: var(--accent-blue); border-radius: 10px; }
 
-  /* Editorial Typography Classes */
   .display-font { font-family: 'Sora', sans-serif; letter-spacing: -0.04em; }
   .serif-italic { font-family: 'Instrument Serif', serif; font-style: italic; letter-spacing: -0.02em; font-weight: 400; }
   
@@ -102,25 +99,25 @@ tailwind.config = {
     color: transparent;
   }
 
-  /* Subtle Grid Background */
   .grid-bg {
     background-image:
-      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
     background-size: 80px 80px;
   }
   [data-theme="light"] .grid-bg {
     background-image:
-      linear-gradient(rgba(5, 11, 22, 0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(5, 11, 22, 0.04) 1px, transparent 1px);
+      linear-gradient(rgba(5, 11, 22, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(5, 11, 22, 0.03) 1px, transparent 1px);
   }
 
   /* Premium Glassmorphism */
   .glass {
     background: var(--glass-bg);
-    backdrop-filter: blur(20px) saturate(160%);
-    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
     border: 1px solid var(--border-color);
+    box-shadow: 0 30px 80px -20px rgba(0,0,0,0.5), inset 0 1px 1px 0 rgba(255,255,255,0.05);
   }
 
   /* Custom Cursor */
@@ -129,13 +126,13 @@ tailwind.config = {
     border-radius: 50%; transform: translate(-50%, -50%);
     mix-blend-mode: difference;
   }
-  .cursor-dot { width: 6px; height: 6px; background: #fff; transition: width 0.2s, height 0.2s, opacity 0.2s; }
+  .cursor-dot { width: 4px; height: 4px; background: #fff; transition: width 0.2s, height 0.2s, opacity 0.2s; }
   .cursor-ring {
-    width: 40px; height: 40px; border: 1px solid rgba(0, 229, 255, 0.5);
+    width: 40px; height: 40px; border: 1px solid rgba(255, 255, 255, 0.3);
     transition: transform 0.15s ease-out, width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), height 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s, border-color 0.3s;
   }
   .cursor-hover .cursor-dot { opacity: 0; }
-  .cursor-hover .cursor-ring { width: 70px; height: 70px; background: rgba(0, 229, 255, 0.05); border-color: rgba(0, 229, 255, 0.8); }
+  .cursor-hover .cursor-ring { width: 60px; height: 60px; background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.6); }
   @media (hover: none), (max-width: 768px) {
     .cursor-dot, .cursor-ring { display: none !important; }
   }
@@ -148,28 +145,27 @@ tailwind.config = {
   .btn-primary {
     position: relative; overflow: hidden;
     background: var(--accent-blue); color: #fff;
-    padding: 16px 32px; border-radius: 4px; /* Sharper radius for premium feel */
-    font-weight: 600; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase;
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s;
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.1) inset, 0 20px 40px -10px rgba(0, 102, 255, 0.5);
+    padding: 14px 28px; border-radius: 2px;
+    font-weight: 600; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s, color 0.3s;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.1) inset, 0 20px 40px -10px rgba(0, 102, 255, 0.4);
   }
   .btn-primary::after {
     content: ''; position: absolute; inset: 0;
     background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%);
     transform: translateX(-100%); transition: transform 0.6s;
   }
-  .btn-primary:hover { transform: translateY(-2px); background: var(--accent-cyan); color: #000; box-shadow: 0 0 0 1px rgba(255,255,255,0.2) inset, 0 20px 40px -10px rgba(0, 229, 255, 0.5); }
+  .btn-primary:hover { transform: translateY(-2px); background: var(--accent-cyan); color: #000; box-shadow: 0 0 0 1px rgba(255,255,255,0.2) inset, 0 20px 40px -10px rgba(0, 229, 255, 0.4); }
   .btn-primary:hover::after { transform: translateX(100%); }
 
   .btn-ghost {
-    position: relative; padding: 16px 32px; border-radius: 4px;
-    font-weight: 600; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase;
+    position: relative; padding: 14px 28px; border-radius: 2px;
+    font-weight: 600; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
     color: var(--text-primary); border: 1px solid var(--border-color);
     transition: all 0.3s ease; overflow: hidden;
   }
   .btn-ghost:hover { border-color: var(--accent-cyan); background: rgba(0, 229, 255, 0.05); }
 
-  /* Reveal Animations */
   .reveal { opacity: 0; transform: translateY(40px); transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1); }
   .reveal.in { opacity: 1; transform: translateY(0); }
   .reveal-stagger > * { opacity: 0; transform: translateY(30px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
@@ -181,7 +177,6 @@ tailwind.config = {
   .reveal-stagger.in > *:nth-child(5) { transition-delay: 0.45s; }
   .reveal-stagger.in > *:nth-child(6) { transition-delay: 0.55s; }
 
-  /* Floating Hero Panels */
   .hero-stage { perspective: 1200px; }
   .hero-panel { transform-style: preserve-3d; will-change: transform; animation: floatPanel 8s ease-in-out infinite; }
   .hero-panel.delay-1 { animation-delay: -2s; }
@@ -207,12 +202,10 @@ tailwind.config = {
   .bento-card:hover::before { opacity: 1; }
   .bento-card:hover { transform: translateY(-4px); border-color: rgba(0, 229, 255, 0.3); }
   
-  /* Text Reveal Mask */
   .mask-reveal { overflow: hidden; }
   .mask-reveal > * { display: inline-block; transform: translateY(100%); transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1); }
   .in .mask-reveal > * { transform: translateY(0); }
 
-  /* Mobile Menu */
   .mobile-menu { transform: translateY(-100%); transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
   .mobile-menu.open { transform: translateY(0); }
   .mobile-menu .menu-item { opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s; }
@@ -246,44 +239,26 @@ tailwind.config = {
   select.input-field { color: var(--text-primary); }
   select.input-field:invalid { color: var(--text-dim); }
 
-  /* Process Timeline */
-  .timeline-line {
-    background: linear-gradient(180deg, var(--accent-blue) 0%, var(--accent-cyan) 100%);
-  }
-
-  /* Focus Visible */
+  .timeline-line { background: linear-gradient(180deg, var(--accent-blue) 0%, var(--accent-cyan) 100%); }
   *:focus-visible { outline: 2px solid var(--accent-cyan); outline-offset: 3px; border-radius: 4px; }
   
-  /* Noise Texture */
-  .noise {
-    position: fixed; inset: 0; pointer-events: none; opacity: 0.02; z-index: 1;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  }
-
-  /* Toast */
   .toast { transform: translateY(100px); opacity: 0; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s; }
   .toast.show { transform: translateY(0); opacity: 1; }
 
-  /* Aurora */
-  .aurora { position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.4; pointer-events: none; }
-      /* ==========================================
-       FIX: WHITE TEXT IN LIGHT MODE
-       Forces text-white classes to turn dark 
-       when Light Mode is active.
-    ========================================== */
-    [data-theme="light"] .text-white { color: #050B16 !important; }
-    [data-theme="light"] .text-white\/90 { color: rgba(5, 11, 22, 0.9) !important; }
-    [data-theme="light"] .text-white\/80 { color: rgba(5, 11, 22, 0.8) !important; }
-    [data-theme="light"] .text-white\/70 { color: rgba(5, 11, 22, 0.7) !important; }
-    [data-theme="light"] .text-white\/65 { color: rgba(5, 11, 22, 0.65) !important; }
-    [data-theme="light"] .text-white\/60 { color: rgba(5, 11, 22, 0.6) !important; }
-    [data-theme="light"] .text-white\/55 { color: rgba(5, 11, 22, 0.55) !important; }
-    [data-theme="light"] .text-white\/50 { color: rgba(5, 11, 22, 0.5) !important; }
-    [data-theme="light"] .text-white\/40 { color: rgba(5, 11, 22, 0.4) !important; }
-    [data-theme="light"] .text-white\/30 { color: rgba(5, 11, 22, 0.3) !important; }
-    [data-theme="light"] .text-white\/20 { color: rgba(5, 11, 22, 0.2) !important; }
-    [data-theme="light"] .text-white\/10 { color: rgba(5, 11, 22, 0.1) !important; }
-    [data-theme="light"] .text-white\/5 { color: rgba(5, 11, 22, 0.05) !important; }
+  .aurora { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.3; pointer-events: none; }
+
+  [data-theme="light"] .text-white { color: #050B16 !important; }
+  [data-theme="light"] .text-white\/90 { color: rgba(5, 11, 22, 0.9) !important; }
+  [data-theme="light"] .text-white\/80 { color: rgba(5, 11, 22, 0.8) !important; }
+  [data-theme="light"] .text-white\/70 { color: rgba(5, 11, 22, 0.7) !important; }
+  [data-theme="light"] .text-white\/60 { color: rgba(5, 11, 22, 0.6) !important; }
+  [data-theme="light"] .text-white\/55 { color: rgba(5, 11, 22, 0.55) !important; }
+  [data-theme="light"] .text-white\/50 { color: rgba(5, 11, 22, 0.5) !important; }
+  [data-theme="light"] .text-white\/40 { color: rgba(5, 11, 22, 0.4) !important; }
+  [data-theme="light"] .text-white\/30 { color: rgba(5, 11, 22, 0.3) !important; }
+  [data-theme="light"] .text-white\/20 { color: rgba(5, 11, 22, 0.2) !important; }
+  [data-theme="light"] .text-white\/10 { color: rgba(5, 11, 22, 0.1) !important; }
+  [data-theme="light"] .text-white\/5 { color: rgba(5, 11, 22, 0.05) !important; }
 </style>
 </head>
 
@@ -291,13 +266,12 @@ tailwind.config = {
 
 <div class="cursor-dot" id="cursorDot"></div>
 <div class="cursor-ring" id="cursorRing"></div>
-<div class="noise"></div>
 
 <!-- ========== NAVIGATION ========== -->
 <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
   <nav class="max-w-[1400px] mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
     <a href="#home" class="flex items-center gap-3 group" data-cursor="link">
-            <img src="bfx-logo.jpeg" alt="Brixo-TechFX Logo" class="w-12 h-12 object-contain">
+      <img src="bfx-logo.jpeg" alt="Brixo-TechFX Logo" class="w-10 h-10 object-contain">
       <div class="leading-tight">
         <div class="display-font font-bold text-[15px] tracking-tight">BRIXO<span class="text-spark-cyan">-</span>TECHFx</div>
         <div class="text-[9px] tracking-[0.25em] text-white/40 font-medium">DIGITAL SOLUTIONS</div>
@@ -352,7 +326,7 @@ tailwind.config = {
 <section id="home" class="relative min-h-screen flex items-center pt-28 lg:pt-24 overflow-hidden">
   <div class="absolute inset-0 grid-bg" style="-webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 40%, black 30%, transparent 80%);mask-image:radial-gradient(ellipse 80% 60% at 50% 40%, black 30%, transparent 80%);"></div>
   <div class="aurora" style="width:600px;height:600px;background:#0066FF;top:-100px;left:-200px;"></div>
-  <div class="aurora" style="width:500px;height:500px;background:#00E5FF;bottom:-100px;right:-100px;opacity:0.3;"></div>
+  <div class="aurora" style="width:500px;height:500px;background:#00E5FF;bottom:-100px;right:-100px;opacity:0.2;"></div>
 
   <div class="max-w-[1400px] mx-auto px-6 lg:px-12 w-full relative z-10">
     <div class="grid lg:grid-cols-12 gap-12 items-center">
@@ -383,9 +357,7 @@ tailwind.config = {
 
       <!-- Right visual: High-fidelity 3D composition -->
       <div class="lg:col-span-5 relative hero-stage h-[500px] sm:h-[600px] hidden lg:block" id="heroStage">
-        <!-- Main dashboard panel -->
-        <div class="hero-panel absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] glass rounded-xl p-5 shadow-2xl" style="transform-style:preserve-3d;box-shadow:0 30px 80px -20px rgba(0,102,255,0.4);">
-           <!-- SaaS Dashboard Mockup -->
+        <div class="hero-panel absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] glass rounded-xl p-5" style="transform-style:preserve-3d;box-shadow:0 30px 80px -20px rgba(0,102,255,0.4);">
            <div class="flex justify-between mb-6">
              <div class="text-xs font-mono text-white/40">analytics_brixo.live</div>
              <div class="flex gap-1.5">
@@ -417,8 +389,7 @@ tailwind.config = {
            </div>
         </div>
 
-        <!-- UI Panel -->
-        <div class="hero-panel delay-1 absolute top-[5%] right-[-10%] w-[200px] glass rounded-lg p-3 shadow-2xl" style="transform:translateZ(40px);">
+        <div class="hero-panel delay-1 absolute top-[5%] right-[-10%] w-[200px] glass rounded-lg p-3" style="transform:translateZ(40px);">
           <div class="rounded-md overflow-hidden">
             <div class="bg-gradient-to-br from-spark-blue/30 to-spark-cyan/10 h-16 flex items-center justify-center">
               <div class="w-10 h-10 rounded-full bg-spark-cyan/40 flex items-center justify-center">
@@ -429,7 +400,6 @@ tailwind.config = {
           <div class="text-[8px] text-white/40 mt-1.5 uppercase tracking-wider">UI / UX Design</div>
         </div>
 
-        <!-- Geometric shapes -->
         <div class="absolute top-[10%] left-[5%] w-12 h-12 hero-panel delay-3" style="transform:translateZ(60px);">
           <div class="w-full h-full rounded-full border-2 border-spark-cyan/40" style="animation:spin 12s linear infinite;"></div>
         </div>
@@ -473,7 +443,7 @@ tailwind.config = {
 <!-- ========== ABOUT ========== -->
 <section id="about" class="relative py-24 lg:py-32 overflow-hidden">
   <div class="absolute inset-0 grid-bg opacity-50"></div>
-  <div class="aurora" style="width:400px;height:400px;background:#0066FF;top:30%;left:-100px;opacity:0.3;"></div>
+  <div class="aurora" style="width:400px;height:400px;background:#0066FF;top:30%;left:-100px;opacity:0.2;"></div>
 
   <div class="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
     <div class="grid lg:grid-cols-12 gap-16 items-end">
@@ -506,7 +476,7 @@ tailwind.config = {
 
 <!-- ========== SERVICES (BENTO BOX LAYOUT) ========== -->
 <section id="services" class="relative py-24 lg:py-32 overflow-hidden">
-  <div class="aurora" style="width:500px;height:500px;background:#0066FF;top:20%;right:-200px;opacity:0.25;"></div>
+  <div class="aurora" style="width:500px;height:500px;background:#0066FF;top:20%;right:-200px;opacity:0.15;"></div>
 
   <div class="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
     <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16 reveal">
@@ -858,7 +828,7 @@ tailwind.config = {
 
 <!-- ========== PROCESS ========== -->
 <section id="process" class="relative py-24 lg:py-32 overflow-hidden">
-  <div class="aurora" style="width:500px;height:500px;background:#0066FF;top:30%;right:-150px;opacity:0.25;"></div>
+  <div class="aurora" style="width:500px;height:500px;background:#0066FF;top:30%;right:-150px;opacity:0.15;"></div>
 
   <div class="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
     <div class="text-center mb-20 reveal">
@@ -957,7 +927,7 @@ tailwind.config = {
 <!-- ========== CTA ========== -->
 <section class="relative py-24 lg:py-32 overflow-hidden">
   <div class="absolute inset-0 grid-bg opacity-50"></div>
-  <div class="aurora" style="width:600px;height:600px;background:#0066FF;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0.3;"></div>
+  <div class="aurora" style="width:600px;height:600px;background:#0066FF;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0.2;"></div>
 
   <div class="max-w-4xl mx-auto px-6 lg:px-12 text-center relative z-10 reveal">
     <h2 class="display-font text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] mb-8">
@@ -975,7 +945,7 @@ tailwind.config = {
 
 <!-- ========== CONTACT ========== -->
 <section id="contact" class="relative py-24 lg:py-32 overflow-hidden border-t border-white/5">
-  <div class="aurora" style="width:500px;height:500px;background:#00E5FF;top:10%;right:-150px;opacity:0.2;"></div>
+  <div class="aurora" style="width:500px;height:500px;background:#00E5FF;top:10%;right:-150px;opacity:0.15;"></div>
 
   <div class="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
     <div class="grid lg:grid-cols-12 gap-16">
@@ -1467,7 +1437,8 @@ window.addEventListener('scroll', () => {
     timelineProgress.style.height = `${scrolled * 100}%`;
   }
 });
-  // ==========================================
+
+// ==========================================
 // PWA SERVICE WORKER REGISTRATION
 // ==========================================
 if ('serviceWorker' in navigator) {
